@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/message_single_second_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/message_single_second_image"
+        android:layout_width="49dp"
+        android:layout_height="49dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="15dp"
+        app:srcCompat="@drawable/baseline_account_box_black_18dp" />
+
+    <TextView
+        android:id="@+id/message_single_second_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/message_single_second_image"
+        android:layout_marginTop="-1dp"
+        android:layout_marginEnd="4dp"
+        android:layout_toStartOf="@+id/message_single_second_image"
+        android:text="TextView"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/message_single_second_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/message_single_second_name"
+        android:layout_marginTop="-1dp"
+        android:layout_marginEnd="7dp"
+        android:layout_toStartOf="@+id/message_single_second_name"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/message_single_second_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/message_single_second_image"
+        android:layout_marginTop="-29dp"
+        android:layout_marginEnd="0dp"
+        android:layout_toStartOf="@+id/message_single_second_image"
+        android:background="@drawable/message_text_background"
+        android:paddingHorizontal="10dp"
+        android:paddingVertical="5dp"
+        android:text="TextView"
+        android:textSize="16sp" />
+</RelativeLayout>

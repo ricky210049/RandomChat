@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/message_single_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/message_single_image"
+        android:layout_width="53dp"
+        android:layout_height="53dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="11dp"
+        app:srcCompat="@drawable/baseline_account_box_black_18dp" />
+
+    <TextView
+        android:id="@+id/message_single_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/message_single_image"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="0dp"
+        android:layout_toEndOf="@+id/message_single_image"
+        android:text="name"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/message_single_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/message_single_name"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="4dp"
+        android:layout_toEndOf="@+id/message_single_image"
+        android:background="@drawable/message_text_background"
+        android:paddingHorizontal="12dp"
+        android:paddingVertical="8dp"
+        android:text="TextView"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/message_single_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/message_single_name"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="2dp"
+        android:layout_toEndOf="@+id/message_single_name"
+        android:text="time" />
+</RelativeLayout>
+
+
